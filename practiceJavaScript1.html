@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html lang="en-US">
+
+<head>
+
+<meta charset="UTF-8">
+<!-- javascript #1 -->
+<title>javascript 1</title>
+
+<style type="text/css">
+
+body {
+     background-image: url("man on moon.jpg"); 
+     text-align: center;
+     font-family: Arial;
+     font-size: 3em;
+}
+
+fieldset { 
+     border:0px;
+}
+
+button {
+    color:red;
+    font-size: .5em;
+}
+</style>
+
+<script>
+function findAstronauts() {
+    document.getElementById("missionNumber")
+    document.getElementById("commanderName")
+var mission = missionNumber.value
+if (mission == "7") {
+    commanderName.innerHTML = "Wally Schirra"
+} else if ( mission == "8") {
+    commanderName.innerHTML = "Frank Borman"
+} else if ( mission == "9") {
+    commanderName.innerHTML = "James McDivitt"
+} else if ( mission == "10") {
+    commanderName.innerHTML = "Thomas Stafford"
+} else if ( mission == "11") {
+    commanderName.innerHTML = "Neil Armstrong"
+} else if ( mission == "12") {
+    commanderName.innerHTML = "Pete Conrad"
+} else if ( mission == "13") {
+    commanderName.innerHTML = "James Lovell"
+} else if ( mission == "14") {
+    commanderName.innerHTML = "Alan Shepard"
+} else if ( mission == "15") {
+    commanderName.innerHTML = "David Scott"
+} else if ( mission == "16") {
+    commanderName.innerHTML = "John Young"
+} else if ( mission == "17") {
+    commanderName.innerHTML = "Eugene Cernan"
+} else {
+    commanderName.innerHTML = "invalid mission number"
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<form>
+   <fieldset>
+     <p>Find the commander of the Apollo mission</p>
+     <p>enter the mission number and click the button</p>
+     <p id = "commanderName">
+     <input type ="text" id ="missionNumber"/>
+     <button onclick="findAstronauts()">click here</button></p>
+   </fieldset>
+</form>
+
+
+
+</body>
+
+</html>
